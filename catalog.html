@@ -13,17 +13,60 @@
     <img src="http://placehold.it/111x24" class="logo">
     <nav>
       <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li class="active"><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="price-list.html">Прайс-лист</a></li>
+        <li class="active"><a href="shop.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <a href="#">Вход</a>
     </nav>
   </header>
   <main>
-
+    <h1 class="visually-hidden">Каталог товаров</h1><!-- TODO: check parent-child correctness -->
+    <h2>Средства для ухода</h2>
+    <nav class="breadcrumbs">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li><a href="cosmetics.html">Средства для ухода</a></li>
+      </ul>
+    </nav>
+    <!-- section. -->
+    <section class="filters">
+      <section class="vendors">
+        <h3>Производители:</h3>
+      </section>
+      <section class="product-groups">
+        <h3>Группы товаров:</h3>
+      </section>
+      <button class="button">Показать</button>
+    </section>
+    <section class="products">
+      <article class="product">
+        <img src="http://placehold.it/216x280" alt="Baxter of California">
+        <h4>Набор для путешествий<span class="title">&laquo;BAXTER OF CALIFORNIA&raquo;</span></h4>
+        <div>
+          <span class="price">2900</span>
+          <button class="button">Купить</button>
+        </div>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/216x280" alt="Baxter of California">
+        <h4>Увлажняющий кондиционер<span class="title">&laquo;BAXTER OF CALIFORNIA&raquo;</span></h4>
+        <div>
+          <span class="price">750</span>
+          <button class="button">Купить</button>
+        </div>
+      </article>
+    </section>
+    <nav class="pagination">
+      <ul>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+    </nav>
   </main>
   <footer>
     <address>
@@ -32,6 +75,24 @@
       Как нас найти?
       Телефон: +7 (495) 666-02-66
     </address>
+    <section class="social-networks">
+      <div>
+        <b>Давайте дружить</b>
+      </div>
+      <ul>
+        <li class="social-btn social-btn-vk"><a href="http://vk.com/barbershop">Vk</a></li>
+        <li class="social-btn social-btn-fb"><a href="http://facebook.com/barbershop">Facebook</a></li>
+        <li class="social-btn social-btn-ig"><a href="http://instagram.com/barbershop">Instagram</a></li>
+      </ul>
+    </section>
+    <section class="copyright">
+      <div>
+        <b>Разработано:</b>
+      </div>
+      <div>
+        <button class="button">HTML Academby</button>
+      </div>
+    </section>
   </footer>
 </body>
 
