@@ -37,13 +37,43 @@
     </ul>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <section class="vendors">
-        <h3>Производители:</h3>
-      </section>
-      <section class="product-groups">
-        <h3>Группы товаров:</h3>
-      </section>
-      <button class="button">Показать</button>
+      <form action="catalog.html" method="POST">
+        <fieldset class="filter-vendors">
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][baxter-of-california]" checked>Baxter of California</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][mr-natty]">Mr Natty</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][suavecito]" checked>Suavecito</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][malin-goetz]">Malin+Goetz</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][murray-s]">Murray’s</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="filter[vendors][american-crew]" checked>American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter product-groups">
+          <legend>
+            Группы товаров:
+          </legend>
+          <ul>
+            <li><label><input type="radio" name="filter-product-group" value="shaving">Бритвенные
+                 принадлежности</label></li>
+            <li><label><input type="radio" name="filter-product-group" value="care" checked>Средства для ухода</label></li>
+            <li><label><input type="radio" name="filter-product-group" value="accessories">Аксессуары</label></li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
     <section class="products">
       <h2 class="visually-hidden">Товары</h2>
