@@ -1,0 +1,22 @@
+{
+  "name": "816001-barbershop",
+  "version": "1.0.0",
+  "description": "HTML Academy HTML & CSS intensive level 1 #23",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittorius/816001-barbershop.git"
+  },
+  "author": "Victor Zagorodny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vittorius/816001-barbershop/issues"
+  },
+  "homepage": "https://github.com/vittorius/816001-barbershop#readme",
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "^0.1.1"
+  }
+}
