@@ -29,3 +29,7 @@
 body {
   font: bold 14px/24px "PT Sans Narrow", "Arial", sans-serif;
 }
+
+img {
+  max-width: 100%;
+}
