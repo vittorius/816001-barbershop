@@ -14,6 +14,8 @@
 
 body {
   font: bold 14px/24px "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 img {
