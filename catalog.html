@@ -35,9 +35,9 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form action="catalog.html" method="POST">
-          <fieldset class="filter-vendors">
+          <fieldset>
             <legend>Производители:</legend>
-            <ul>
+            <ul class="filter-vendors">
               <li>
                 <label><input type="checkbox" name="filter[vendors][baxter-of-california]" checked />Baxter of California</label>
               </li>
@@ -58,9 +58,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter product-groups">
+          <fieldset>
             <legend>Группы товаров:</legend>
-            <ul>
+            <ul class="filter-product-groups">
               <li>
                 <label><input type="radio" name="filter-product-group" value="shaving" />Бритвенные принадлежности</label>
               </li>
@@ -80,45 +80,45 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3><span class="item-desc">Набор для путешествий</span> <span class="item-title">&laquo;BAXTER OF CALIFORNIA&raquo;</span></h3>
+              <h3><span class="item-desc">Набор для путешествий</span> <span class="item-title">«Baxter of california»</span></h3>
               <img src="img/catalog-item-1.jpg" alt="Набор для путешествий Baxter of California" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">2&nbsp;900&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">2&nbsp;900&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3><span class="item-desc">Увлажняющий кондиционер</span> <span class="item-title">&laquo;BAXTER OF CALIFORNIA&raquo;</span></h3>
+              <h3><span class="item-desc">Увлажняющий кондиционер</span> <span class="item-title">«Baxter of california»</span></h3>
               <img src="img/catalog-item-2.jpg" alt="Увлажняющий кондиционер Baxter of California" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">750&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">750&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3><span class="item-desc">Гель для волос</span> <span class="item-title">«SUAVECITO»</span></h3>
+              <h3><span class="item-desc">Гель для волос</span> <span class="item-title">«Suavecito»</span></h3>
               <img src="img/catalog-item-3.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">290&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">290&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
               <h3><span class="item-desc">Глина для укладки волос</span> <span class="item-title"> «American Crew»</span></h3>
               <img src="img/catalog-item-4.jpg" alt="Глина для укладки волос  «American crew»" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">500&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">500&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
               <h3><span class="item-desc">Гель для волос</span> <span class="item-title"> «American Crew»</span></h3>
               <img src="img/catalog-item-5.jpg" alt="Гель для волос  «American Crew»" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">300&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">300&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
               <h3><span class="item-desc">Набор для бритья</span> <span class="item-title"> «Baxter of California»</span></h3>
               <img src="img/catalog-item-6.jpg" alt="Набор для бритья  «Baxter of California»" width="220" height="165" />
             </a>
-            <div class="price-block"><span class="price">3&nbsp;900&nbsp;₽</span> <button class="button-buy">Купить</button></div>
+            <div class="price-block"><span class="price">3&nbsp;900&nbsp;₽</span> <button class="button button-buy">Купить</button></div>
           </li>
         </ul>
       </section>
@@ -130,19 +130,23 @@
       </ul>
     </main>
     <footer>
-      <address>Барбершоп «Бородинский» Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Как нас найти? Телефон: +7 (495) 666-02-66</address>
+      <address class="contact-address">
+        Барбершоп «Бородинский» Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Как нас найти? Телефон: +7 (495) 666-02-66
+      </address>
       <section class="social-networks">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <div><b>Давайте дружить</b></div>
         <ul class="social-links">
-          <li class="social-btn social-btn-vk">
-            <a href="http://vk.com/barbershop"><span class="visually-hidden">Барбершоп Вконтакте</span></a>
+          <li>
+            <a href="http://vk.com/barbershop" class="social-link social-link-vk"><span class="visually-hidden">Барбершоп Вконтакте</span></a>
           </li>
-          <li class="social-btn social-btn-fb">
-            <a href="http://facebook.com/barbershop"><span class="visually-hidden">Барбершоп в Facebook</span></a>
+          <li>
+            <a href="http://facebook.com/barbershop" class="social-link social-link-fb"><span class="visually-hidden">Барбершоп в Facebook</span></a>
           </li>
-          <li class="social-btn social-btn-ig">
-            <a href="http://instagram.com/barbershop"><span class="visually-hidden"> Барбершоп в Instagram</span></a>
+          <li>
+            <a href="http://instagram.com/barbershop" class="social-link social-link-ig"
+              ><span class="visually-hidden">Барбершоп в Instagram</span></a
+            >
           </li>
         </ul>
       </section>

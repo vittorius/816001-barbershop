@@ -2,6 +2,7 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 400;
+  /* stylelint-disable-next-line value-list-comma-newline-after */
   src: local("PT Sans Narrow"), local("PTSans-Narrow"), url("fonts/ptsansnarrow.woff2") format(woff2), url("fonts/ptsansnarrow.woff") format(woff);
 }
 
@@ -9,7 +10,9 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans Narrow Bold"), local("PTSans-NarrowBold"), url("fonts/ptsansnarrow.woff2") format(woff2), url("fonts/ptsansnarrow.woff") format(woff);
+  /* stylelint-disable-next-line value-list-comma-newline-after */
+  src: local("PT Sans Narrow Bold"), local("PTSans-NarrowBold"), url("fonts/ptsansnarrow.woff2") format(woff2),
+    url("fonts/ptsansnarrow.woff") format(woff);
 }
 
 body {
@@ -26,6 +29,22 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #000000;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
 }
 
 .main-navigation {
@@ -81,4 +100,80 @@ a {
 
 .breadcrumbs .active {
   color: #aba9a7;
+}
+
+.filters,
+.products {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.filters legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filters label {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.filters label:hover {
+  color: #663d15;
+}
+
+.filters button[type="submit"] {
+  font-size: 13px;
+}
+
+.filter-vendors,
+.filter-product-groups {
+  list-style: none;
+}
+
+.products a {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+}
+
+.catalog-item .item-desc {
+  text-transform: none;
+}
+
+.catalog-item .price {
+  text-transform: none;
+
+  background-color: #e5e5e5;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.contact-address {
+  font-style: normal;
+  line-height: 23px;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-link {
+  color: #ffffff;
+
+  background-color: #000000;
 }
