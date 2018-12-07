@@ -39,6 +39,7 @@ a {
   text-transform: uppercase;
 
   background-color: #000000;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -89,9 +90,11 @@ a {
 }
 
 .breadcrumbs {
-  line-height: 20px;
-
   list-style: none;
+}
+
+.catalog-page .breadcrumbs {
+  line-height: 20px;
 }
 
 .breadcrumbs a {
@@ -176,4 +179,22 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.thumbnails {
+  list-style: none;
+}
+
+.product-details .sku {
+  color: #aeaeae;
+}
+
+.product-contents h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-contents-items {
+  line-height: 23px;
+  list-style: none;
 }
